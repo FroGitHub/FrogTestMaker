@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style_add.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" th:href="@{files_for_pages/icon.png}">
+</head>
+<body>
+<form th:object="${ans}" th:action="@{/save}" method="post" enctype="multipart/form-data">
+    <img th:src="@{files_for_pages/liliwater.svg}" alt="" class="waterLily1 anim">
+    <img th:src="@{files_for_pages/liliwater.svg}" alt="" class="waterLily2 anim">
+    <img th:src="@{files_for_pages/liliwater.svg}" alt="" class="waterLily3 anim">
+    <img th:src="@{files_for_pages/liliwater.svg}" alt="" class="waterLily4 anim">
+    <img th:src="@{files_for_pages/bigliliwater.png}" alt="" class="bigWaterLily anim">
+    <img th:src="@{files_for_pages/Chepapchuky.png}" alt="" class="chep anim">
+
+    <div class="form-file"><input type="file" name="imageFile" /></div>
+
+    <button type="submit" class="button">Get answer</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style_home.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" th:href="@{files_for_pages/icon.png}">
+</head>
+<body>
+<main>
+    <img th:src="@{files_for_pages//liliwater.png}" alt="" class="anim waterLily-1">
+
+    <div th:each="ans : ${answers}">
+        <section class="section section1">
+            <div><img th:src="@{${ans.img}}" alt="" class="img"></div>
+            <p class="text" th:text="${ans.answer}"></p>
+            <div class="red-delete"><a th:href="@{/delete/{id}(id=${ans.id})}" class="red-delete-a"></a></div>
+        </section>
+    </div>
+    <div class="button"><a href="/add" class="button-link">Give me an answer, mr Frog</a></div>
+
+    <img th:src="@{files_for_pages//liliwater.png}" alt="" class="anim waterLily-2">
+    <img th:src="@{files_for_pages//liliwater.svg}" alt="" class="anim waterLily-3">
+    <img th:src="@{files_for_pages//liliwater.png}" alt="" class="anim waterLily-4">
+    <img th:src="@{files_for_pages/Frogyyyyyyy.png}" alt="" class="anim frogy">
+</main>
+</body>
+</html>
+
+
+

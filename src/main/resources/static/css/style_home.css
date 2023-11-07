@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background-color: #C5F5EC;
+  padding: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.section {
+  background-color: #86E975;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 31px;
+  padding: 44px;
+  padding-right: 0;
+  box-shadow: 5px 5px 5px #b1b1b1df;
+  margin: 70px 100px 44px;
+  max-height: 390px;
+  max-width: 1500px;
+  box-sizing: border-box;
+}
+.section:hover {
+  background-color: #f4e027da;
+}
+.red-delete {
+  height: 390px;
+  width: 5%;
+  background-color: #FF3C3C;
+  float: right;
+  border-top-right-radius: 31px;
+  border-bottom-right-radius: 31px;
+}
+.red-delete-a {
+  display: inline-block;
+  height: 390px;
+  width: 100%;
+}
+.red-delete:hover {
+  background-color: #ba1414;
+}
+.img {
+  border-radius: 2px;
+}
+.text {
+  margin-left: 44px;
+}
+.text:hover {
+  color: #FF3C3C;
+}
+.button {
+  background-color: #F4DF27;
+  border-radius: 31px;
+  text-align: center;
+  padding: 10px;
+  margin: 40px 200px 120px;
+}
+.button-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  color: #fff;
+}
+.button:hover {
+  background-color: #FF3C3C;
+}
+.button:active,
+.button:focus {
+  position: relative;
+  top: 2px;
+  background-color: #c5b422;
+}
+.waterLily-1 {
+  position: absolute;
+  right: -50px;
+  top: -20px;
+}
+.waterLily-2 {
+  position: absolute;
+  left: -50px;
+  top: 400px;
+}
+.waterLily-3 {
+  position: absolute;
+  right: -50px;
+  bottom: -500px;
+}
+.waterLily-4 {
+  position: absolute;
+  right: 150px;
+  bottom: -600px;
+}
+.frogy {
+  position: absolute;
+  bottom: -550px;
+}
+.anim {
+  z-index: -1;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes animation{
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
